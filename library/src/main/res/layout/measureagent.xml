@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/weight_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/weight_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="25"
+            android:textColor="@color/orange"
+            android:textSize="44.0sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/weight_value"
+            android:layout_marginBottom="6.0dip"
+            android:layout_toRightOf="@+id/weight_value"
+            android:text=" kg"
+            android:textColor="@color/middle_grey"
+            android:textSize="22.0sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_marginTop="55.0dip"
+        android:src="@drawable/userinfo_scroll_bg"/>
+
+    <com.roselism.library.ObservableHorizontalScrollView
+        android:id="@+id/weight_scrollview"
+        android:layout_width="262.0dip"
+        android:layout_height="75.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65.0dip"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/weight_scrollview_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="1262.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="130.0dip"
+                android:layout_marginRight="130.0dip"
+                android:src="@drawable/userinfo_scroll_weight"/>
+        </LinearLayout>
+    </com.roselism.library.ObservableHorizontalScrollView>
+
+    <ImageView
+        android:layout_width="2.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65.0dip"
+        android:src="@drawable/userinfo_red_line_2"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_marginTop="55.0dip"
+        android:src="@drawable/userinfo_scroll_top"/>
+</RelativeLayout>
